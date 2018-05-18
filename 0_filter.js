@@ -6,7 +6,7 @@
 */
 (
     function()
-        // Anonymous function inside a closure
+        // Anonymous function inside a bracket which lets you treat functions as expression.
     {
 
         
