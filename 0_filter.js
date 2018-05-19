@@ -42,14 +42,14 @@
         /*
             What the heck even is a filter?
                 Filter is a method in array object,
-                i) First you need to give a function the to the filter which returns true or false as a parameter to it.
-                ii) It creates an empty object
-                iii) Then it iterates or loops through the array to the left side of the dot,
-                    In this case it's animals. So it loops through elements
-                    in animals and passes it to the function you gave it in the beginning.
-                iv) Filter expects that function to either return true or false.
-                    If the function you gave returns true it adds the current element to the empty array.
-                    If the function you gave returns false it rejects to add the current element to the empty array.
+                i) Filter expects you to give a function as a parameter which returns a boolean.
+                ii) Before executing the function, It creates an empty object
+                iii) Then it iterates or loops through the array,
+                    calling individual array element to the function and...
+                iv) Based on the returned boolean upon calling the function with array element
+                    If the function returns true it adds the current element to the empty array.
+                    If the function returns false it rejects to add the current element to the empty array.
+                 v) When the array elements are all iterated over then it returns the newly made array.
         */
 
         console.log(`After filter: ${mammals}`);
