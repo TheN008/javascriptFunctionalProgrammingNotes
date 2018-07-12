@@ -12,7 +12,9 @@
         But how does that work?
     */
     let isAdult = function(n) {
-        return n.name;
+        if(n.age >= 18) { 
+            return n.name;
+        }
     }
 
 
